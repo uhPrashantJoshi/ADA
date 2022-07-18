@@ -11,7 +11,7 @@ void delay()
 }
 
 
-void quicksort(int number[25],int first,int last){
+void quicksort(int number[10000],int first,int last){
    int i, j, pivot, temp;
    if(first<last){
       pivot=first;
