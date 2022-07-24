@@ -5,13 +5,13 @@ void TowerOfHanoi(int n, char start, char dest, char aux)
 {
     if(n==1)
     {
-        printf("Move disk 1 from %c to %c", start, dest);
+        printf("\n\tMove disk 1 from %c to %c", start, dest);
         return;
 
     }
     else{
         TowerOfHanoi(n-1,start,aux,dest);
-        printf("Move disk %d from %c to %c",n,start,dest);
+        printf("\n\tMove disk %d from %c to %c",n,start,dest);
         TowerOfHanoi(n-1,aux,dest,start);
     }
 }
